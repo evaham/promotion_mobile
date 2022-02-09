@@ -37,12 +37,10 @@
 }
 h1 {
   font-size: 2.6rem;
-  text-align: center;
 }
 h2 {
-  margin: 2rem 0 5rem;
-  font-size: 2.8rem;
-  text-align: center;
+  margin: 0 0 0 4rem;
+  font-size: 2.6rem;
   letter-spacing: -0.1rem;
   b {
     color: #1274f2;
@@ -66,64 +64,19 @@ h2 {
   }
 }
 
-.infolist {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  width: 85%;
-  margin: 0 auto;
-  li {
-    padding: 1rem 0;
-    border-top: 1px solid #ddd;
-    text-align: left;
-    &:first-child {
-      border-top: none;
-    }
-    p {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      font-size: 1.8rem;
-      font-weight: 600;
-      letter-spacing: -0.1rem;
-      em {
-        display: block;
-        font-weight: 600;
-        font-style: normal;
-      }
-      span {
-        position: absolute;
-        right: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 7rem;
-        max-height: 7rem;
-        > img {
-          max-width: 100%;
-          max-height: 100%;
-        }
-      }
-    }
-  }
-}
-
-.progresslist {
+.infolist, .progresslist {
   margin: 0 4rem;
   padding: 0;
   list-style: none;
   li {
     p {
       display: flex;
-      align-items: center;
+      align-items: baseline;
       font-size: 1.6rem;
       letter-spacing: -0.1rem;
       em {
-        padding-right: 1rem;
-        font-size: 2rem;
+        margin-right: 1rem;
+        font-size: 1.8rem;
         font-weight: 600;
         &::after {
           content: ".";
@@ -133,11 +86,43 @@ h2 {
   }
 }
 
+
+.cardbox {
+  display: flex;
+  border: 0.1rem solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px 0 rgba(129, 135, 142, 0.3);
+  > div {
+    flex: 1;
+    padding: 1rem 1.5rem;
+    &:first-child {
+      border-right: 0.1rem solid #ddd;
+    }
+    > p.title {
+      font-weight: normal;
+      justify-content: center;
+      margin: 1rem 0 3rem;
+      padding: 0.5rem;
+      border-radius: 3rem;
+      background: #1274f2;
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: #fff;
+      &::before{content: '';}
+    }
+    > p {
+      font-size: 1.4rem;
+      &::before {content: '◦';}
+    }
+
+  }
+}
+
 .costbox {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  margin: 0 1.6rem;
+  margin: 2rem 4rem;
   border: 0.1rem solid #ccc;
   border-radius: 1rem;
   box-shadow: 0 4px 12px 0 rgba(129, 135, 142, 0.3);
@@ -166,37 +151,10 @@ h2 {
     }
   }
 }
-.cardbox {
-  display: flex;
-  border: 0.1rem solid #ddd;
-  border-radius: 1rem;
-  box-shadow: 0 4px 12px 0 rgba(129, 135, 142, 0.3);
-  > div {
-    flex: 1;
-    padding: 1rem 1.5rem;
-    text-align: center;
-    &:first-child {
-      border-right: 0.1rem solid #ddd;
-    }
-    > p {
-      font-size: 1.4rem;
-      font-weight: normal;
-      color: #333;
-      &:first-child {
-        margin: 1rem 0 3rem;
-        padding: 0.5rem;
-        border-radius: 3rem;
-        background: #1274f2;
-        font-size: 1.6rem;
-        font-weight: 600;
-        color: #fff;
-      }
-    }
-  }
-}
+
 
 .faqlist {
-  margin: 0 0 2rem;
+  margin: 2rem 0 2rem;
   padding: 0;
   border-radius: 1rem;
   background: #fafafa;

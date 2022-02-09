@@ -8,6 +8,6 @@
   </div>
 </template>
 <style lang="scss">
-  @import "@/assets/css/common.scss";
-  // @import '~@/assets/icomoon/style.css';
+@import "@/assets/css/common.scss";
+// @import '~@/assets/icomoon/style.css';
 </style>
