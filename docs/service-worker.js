@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/promotion_mobile/precache-manifest.1f154a93322370a93a2bbe98d9b1dbe6.js"
+  "/promotion_mobile/precache-manifest.e82df7fcce1cd1d6996a2e192ceb13b0.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "promotion_mobile"});
