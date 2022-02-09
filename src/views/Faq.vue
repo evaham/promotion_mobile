@@ -64,7 +64,7 @@
             >통합 버전 :&nbsp;<a href="http://tpos.kr/demo"
               >http://tpos.kr/demo</a
             >
-            &nbsp;로 접속 (ID: pos1577 또는 pos4550)</span
+            &nbsp;(ID: pos1577 또는 pos4550)</span
           >
         </p>
         <p>※ 비번은 주기적으로 변경되므로 파트너팀에 문의해주세요.</p>
