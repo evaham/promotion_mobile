@@ -1,4 +1,4 @@
 module.exports = {
-  publicPath: '/promotion_mobile/',
-  outputDir: 'docs'
-}
+  publicPath: "/promotion_mobile/",
+  outputDir: "docs",
+};
